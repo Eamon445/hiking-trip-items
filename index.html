@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Sharing with Friends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#items">Items</a>
+        <a href="#add-item" class="add-tab" style="display:none;">Add Item</a>
+        <a href="#change-bg" class="bg-tab" style="display:none;">Change Background</a>
+        <a href="#login" class="login-tab">Login</a>
+    </div>
+
+    <div class="container" id="items">
+        <h1>Shared Items</h1>
+        <input type="text" id="searchInput" placeholder="Search items..." onkeyup="searchItems()">
+        <ul id="itemList"></ul>
+    </div>
+
+    <div class="container add-item-form" id="add-item" style="display:none;">
+        <h1>Add a New Item</h1>
+        <input type="text" id="itemInput" placeholder="Item name">
+        <input type="text" id="linkInput" placeholder="Optional link (e.g., https://example.com)">
+        <input type="text" id="imageInput" placeholder="Image URL (optional)">
+        <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <div class="container bg-form" id="change-bg" style="display:none;">
+        <h1>Change Background</h1>
+        <input type="text" id="bgInput" placeholder="Image URL for background">
+        <button onclick="changeBackground()">Set Background</button>
+    </div>
+
+    <div class="container" id="login">
+        <h1>Login</h1>
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <button onclick="checkPassword()">Login</button>
+        <p id="loginMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
