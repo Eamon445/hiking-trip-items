@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,abstract'); /* Example background */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.add-item-form {
+    display: none;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 90%;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+img {
+    margin-top: 5px;
+    max-width: 100px;
+    border-radius: 4px;
+}
